@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa53ec15b7644143b3e7b49554b8da5, type: 3}
+  m_Name: SoundRepo
+  m_EditorClassIdentifier: 
+  soundRepo:
+  - name: Player_Shoot
+    clip: {fileID: 8300000, guid: 3620d790df2c8f442b7d4cce9c29a0c5, type: 3}
+    volume: 0.15
+    spatialBlend: 0
+    pitch: 1.2
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Obstacle_Build
+    clip: {fileID: 8300000, guid: 2777e4b50a77b0745b63dc4ca19131fd, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Player_Powerup
+    clip: {fileID: 8300000, guid: 502d9e953149daf49b1f8b3a71255c8f, type: 3}
+    volume: 0.25
+    spatialBlend: 0
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Player_Hit
+    clip: {fileID: 8300000, guid: 45fb814e4b2d6cf47b8614c4fad35111, type: 3}
+    volume: 0.3
+    spatialBlend: 0
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Player_Die
+    clip: {fileID: 8300000, guid: ca0f7011c5e7c834fa6cd2db6ffb5e5c, type: 3}
+    volume: 0.3
+    spatialBlend: 0
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Zombie_Spawn
+    clip: {fileID: 8300000, guid: 1b909eae5fa60b641a763a532a20bb25, type: 3}
+    volume: 0.3
+    spatialBlend: 0
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Zombie_Die
+    clip: {fileID: 8300000, guid: 9e839dc4a5501eb46ad194efcb3059f7, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Zombie_Hit
+    clip: {fileID: 8300000, guid: 98e3a32f861a6ce4fb0eb58bfaf179d7, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Zerg_Spawn
+    clip: {fileID: 8300000, guid: 874f9bc7c31e8dd408895667357fa097, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Zerg_Hit
+    clip: {fileID: 8300000, guid: 74f7e4a0c0d4873429d53e3dd18799eb, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Zerg_Die
+    clip: {fileID: 8300000, guid: 095f8391da9feb34f8adea359d72c71f, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Tank_Spawn
+    clip: {fileID: 8300000, guid: d83c36055e3a0fb45a1067e5f6a1cd58, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Tank_Hit
+    clip: {fileID: 8300000, guid: c8eff855b46cac8478d6eb40a673703d, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Tank_Die
+    clip: {fileID: 8300000, guid: 4affa4d1355628d48a70639aea995f02, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Demon_Spawn
+    clip: {fileID: 8300000, guid: 1f495c897512de74ca8cb5d8c59cb6bc, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Demon_Hit
+    clip: {fileID: 8300000, guid: 59393172fcb4b2d499cedfcaa2e6262e, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Demon_Die
+    clip: {fileID: 8300000, guid: d22ae3e9dda86f14b8fda2224fe9b971, type: 3}
+    volume: 0.3
+    spatialBlend: 0.3
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}

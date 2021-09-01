@@ -1,0 +1,30 @@
+Moves character according to the rotation
+//Get Movement
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        movementInput = new Vector2(horizontalInput, verticalInput);
+
+
+Called in fixed update:
+
+
+Vector3 targetVelocityX = Vector3.zero;
+        Vector3 targetVelocityZ = Vector3.zero;
+        if (movementInput.x != 0)
+        {
+            targetVelocityX = new Vector3(movementInput.x*transform.right.x * speed, rb.velocity.y, movementInput.x * transform.right.z * speed);
+            //rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref refVelocity, 0.1f);
+            //print("Horizontal: " + targetVelocityX);
+        }
+        if (movementInput.y != 0)
+        {
+            targetVelocityZ = new Vector3(movementInput.y * transform.forward.x * speed, rb.velocity.y, movementInput.y* transform.forward.z * speed);
+            //rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref refVelocity, 0.1f);
+            //print("Vertical: " + targetVelocityZ);
+
+        }
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocityX+targetVelocityZ, ref refVelocity, 0.1f);
+        print("TargetVelocity: " + (targetVelocityZ + targetVelocityX));
+        print("Velocity: " + rb.velocity);
+
+ movementInput = new Vector2(0, 0);

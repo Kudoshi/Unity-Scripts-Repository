@@ -103,7 +103,7 @@ public class TowerRecipe : MonoBehaviour
         //bool towerIsThere = false;
         foreach (var recipe in RecipeTrackerList)
         {
-            if (recipe.towerOutput == twrOutput)
+            if (recipe.towerOutput == twrOutput && recipe.towerRequired[twrBuilt] == null)
             {
                 recipe.towerRequired[twrBuilt] = twrBuilt;
             }
@@ -148,33 +148,3 @@ public class RecipeTracker
         towerRequired= twrRequired;
     }
 }
-/*
-// //Check if it is in any tower recipe
-foreach (var towerRecipe in towerRecipeList) //For every recipe in recipeList do:
-{
-    string towerRequired =
-                if (towerRequired != null) //Contained 
-    {
-        Debug.Log(e_towerBuilt + ": " + towerRecipe.towerOutput);
-
-        //If tower output exist
-        foreach (var possibleTowerRecipe in possibleTowerOutputList)
-        {
-            //If tower output already exist
-            if (possibleTowerRecipe.towerOutput == towerRecipe.towerOutput)
-            {
-                //Check if there are duplicates
-                foreach (var possibleTwrOutput in possibleTowerRecipe.towerRequired)
-                {
-                    if (possibleTwrOutput == towerRequired)
-                    {
-                        //Do nothing
-                    }
-                    else
-                    {
-                    }
-                }
-            }
-        }
-    }
-}*/
